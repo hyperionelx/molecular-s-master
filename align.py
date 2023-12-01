@@ -148,6 +148,7 @@ print('\n' + molecule+' at '+ str(I) + ' x 10$^{14}$ W cm$^{-2}$ at ' + str(Temp
 
 #Plot result, <cos**2\theta>
 plt.figure()
+plt.style.use('default')
 plt.plot(tt*hbar/B*10**12,np.real(cos2),'k-')
 plt.xlabel('Time [ps]')
 plt.ylabel('<cos$^2\Theta$>')
