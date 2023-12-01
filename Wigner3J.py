@@ -3,6 +3,8 @@
 from pylab import *
 import math as m
 import seaborn as sns
+import numpy as np
+
 
 def Wigner3J(j1, j2, j3, m1, m2, m3):
     if 2*j1 != floor(2*j1) or 2*j2 != floor(2*j2) or 2*j3 != floor(2*j3) or 2*m1 != floor(2*m1) or 2*m2 != floor(2*m2) or 2*m3 != floor(2*m3):
