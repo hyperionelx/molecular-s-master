@@ -23,6 +23,6 @@ def SI2au(SI, PhysicalQuantity):
     }
 
     if PhysicalQuantity in conversion_factors:
-        return SI / conversion_factors[PhysicalQuantity]
+        return SI/conversion_factors[PhysicalQuantity]
     else:
         raise ValueError('PhysicalQuantity 请输入: m, e, a0, E, epsilon, t, f, omega, hbar, P, ED, EQ, MD, EF, EP, I, v')
