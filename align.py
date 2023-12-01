@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 from scipy.integrate import ode
 import time
 import math
+#import SI2au as SI2au
 
 # My libraries, if using ipython, restart if these are modified.
 from boltzmann import Boltzmann
@@ -51,7 +52,7 @@ I = SI2au(I,'I'); # a.u.
 E0 = math.sqrt(2*I/(epsilon0*c)); # electric field amplitude
 strength=0.5*4*np.pi*epsilon0*delta_alpha*E0**2/B #in rotational constan
 lambda_m = 400e-9  # 波长，单位：米# 定义 lambda
-lambda_au = SI2au(lambda_m, 'a0')# 调用 SI2au 函数进行单位转换
+lambda_au = SI2au(lambda_m, 'a0');# 调用 SI2au 函数进行单位转换
 c = 137.0359990838876; # a.u. # 光速
 epsilon0 = 0.079577471545795; # a.u.# 真空中介电常数
 T = lambda_au/c #光周期
